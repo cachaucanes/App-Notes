@@ -5,6 +5,7 @@ const methodOverride = require('method-override')
 const session = require('express-session')
 const flash = require('connect-flash')
 const passport = require('passport')
+require('dotenv').config()
 
 //Inicializations
 const app = express()
@@ -15,7 +16,7 @@ require('./config/passport')
 app.set('port', process.env.PORT || 3000)
 app.set('views', path.join(__dirname, 'views')) //Para decirle node que la carpeta views esta justo aquí
 //Configuro el motor de plantilla
-app.engine('hbs', exphbs({
+app.engine('hbs', exphbs.engine({
   defaultLayout: 'main',
   layoutsDir: path.join(app.get('views'), 'layouts'),
   partialsDir: path.join(app.get('views'), 'partials'),

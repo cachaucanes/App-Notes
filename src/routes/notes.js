@@ -37,13 +37,13 @@ router.post('/notes/new-notes', isAuthenticated, async (req, res) => {
 
 //Consulta las notas
 router.get('/notes', isAuthenticated, async (req, res) => {
-  const notes = await Note.find({user: req.user.id}).sort({ created_at: 'desc' })
+  const notes = await Note.find({user: req.user.id}).sort({ created_at: 'desc' }).lean()  
   res.render('notes/all-notes', { notes })
 })
 
 //Recibe el parametro, hace la consulta y renderiza la vista para editar
 router.get('/notes/edit/:id', isAuthenticated, async (req, res) => {
-  const note = await Note.findById(req.params.id)
+  const note = await Note.findById(req.params.id).lean()
   res.render('notes/edit-note', { note })
 })
 

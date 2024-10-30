@@ -7,3 +7,16 @@ body {
 .logo {
   width: 30%;
 }
+
+.CardContainer{
+  height: 250px;
+}
+@media (max-width: 994px){
+  .ContainerImgMain{
+    text-align: center;
+  }
+  .ImgMain{
+    position: inherit !important;
+    width: 120px !important;
+  }
+}
