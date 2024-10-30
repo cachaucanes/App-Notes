@@ -3,7 +3,7 @@ NotesApp is a simple note-taking application built with Node.js, Express, Handle
 
 ## Live Demo
 You can visit the live version of the app here:
--   **Railway**: [NotesApp](app-notes-production-cc37.up.railway.app)
+-   **Railway**: [NotesApp](https://app-notes-production-cc37.up.railway.app/)
     -   **User:** user_prueba@gmail.com
     -   **Password:** 1234
 
@@ -24,7 +24,10 @@ You can visit the live version of the app here:
 ### Hosting database (free)
 [MongoDB]https://www.mongodb.com/products/platform/atlas-database
 
-![notesApp](https://user-images.githubusercontent.com/29615549/63889182-1a080c80-c9a6-11e9-8093-02a93bae6a31.jpg)
+![NotesApp](https://github.com/user-attachments/assets/3c01bc69-651e-4a2d-aa4d-c1e05551a231)
 
-![notes](https://user-images.githubusercontent.com/29615549/63889783-4d976680-c9a7-11e9-8251-a5a777810344.jpg)
+![Login](https://github.com/user-attachments/assets/00e0bff9-d995-4270-a019-5ae2448126f1)
+
+![Dashboard](https://github.com/user-attachments/assets/9fda25b4-4ac9-4db1-8ad3-66b97d089aa9)
+
 
