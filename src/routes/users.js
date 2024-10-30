@@ -53,8 +53,14 @@ router.post('/users/signup', async (req, res) => {
 
 //Logout
 router.get('/users/logout', (req, res) => {
-  req.logout()
-  res.redirect('/')
+  // req.logout()
+  // res.redirect('/')
+  req.logout((err) => {
+    if (err) {
+        return next(err); // Pasa el error al middleware de manejo de errores
+    }
+    res.redirect('/'); // Redirige a la página de inicio de sesión
+});
 })
 module.exports = router
 

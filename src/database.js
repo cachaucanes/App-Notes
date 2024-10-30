@@ -1,7 +1,5 @@
 const mongoose = require('mongoose')
 
-console.log(process.env.HOST_MONGODB);
-
 /* mongoose.connect('mongodb://localhost/notes-db-app', {
   useCreateIndex: true,
   useNewUrlParser: true,

@@ -54,6 +54,11 @@ app.use(require('./routes/users'))
 //Static files
 app.use(express.static(path.join(__dirname, 'public')))
 
+// Ruta comodín para redirigir rutas no definidas sin alterar las imagenes estaticas
+app.get('*', (req, res) => {
+  res.redirect('/');
+});
+
 //Server is listenning
 app.listen(app.get('port'), () => {
   console.log(`Server on port ${app.get('port')}`)
